@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>رساله ليلى</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg1:#faf6f2;
+    --bg2:#f3e9e2;
+    --card:#ffffff;
+    --text:#3b2f2a;
+    --muted:#8a7a70;
+    --accent:#b5836a;
+    --accent2:#d9b48f;
+    --border:#e9ddd2;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg1:#1c1614;
+      --bg2:#241b18;
+      --card:#2a201c;
+      --text:#f0e6df;
+      --muted:#b8a89c;
+      --accent:#e0a97e;
+      --accent2:#c88a5f;
+      --border:#3a2d27;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg1:#1c1614;
+    --bg2:#241b18;
+    --card:#2a201c;
+    --text:#f0e6df;
+    --muted:#b8a89c;
+    --accent:#e0a97e;
+    --accent2:#c88a5f;
+    --border:#3a2d27;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    min-height:100vh;
+    background:linear-gradient(160deg,var(--bg1),var(--bg2));
+    font-family:'Tajawal',sans-serif;
+    color:var(--text);
+    display:flex;
+    justify-content:center;
+    padding:32px 16px;
+  }
+  .wrap{
+    max-width:640px;
+    width:100%;
+  }
+  .header{
+    text-align:center;
+    margin-bottom:28px;
+  }
+  .header .flower{
+    font-size:34px;
+    margin-bottom:6px;
+  }
+  .header h1{
+    font-weight:500;
+    font-size:22px;
+    margin:0;
+    color:var(--accent);
+    letter-spacing:0.5px;
+  }
+  .header p{
+    color:var(--muted);
+    font-size:13px;
+    margin-top:6px;
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:32px 26px;
+    box-shadow:0 12px 40px rgba(0,0,0,0.08);
+    line-height:2.1;
+    font-size:17px;
+    white-space:pre-wrap;
+  }
+  .card p{
+    margin:0 0 18px 0;
+  }
+  .card p:last-child{margin-bottom:0;}
+  .signature{
+    text-align:left;
+    margin-top:26px;
+    font-size:15px;
+    color:var(--accent);
+    font-weight:700;
+  }
+  .footer{
+    text-align:center;
+    margin-top:28px;
+    color:var(--muted);
+    font-size:12px;
+  }
+  .divider{
+    width:60px;
+    height:2px;
+    background:var(--accent2);
+    margin:22px auto;
+    border-radius:2px;
+    opacity:0.6;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="flower">🌷</div>
+      <h1>إلى ليلى</h1>
+      <p>رساله خاصه ما بيها غيرچ</p>
+    </div>
+    <div class="card" id="letter"></div>
+    <div class="footer">هذا الكلام كله من گلب ✍️</div>
+  </div>
+
+<script>
+const text = `هلو حبي
+
+شوف للصراحه اني بعد ما أتحمل، فا اريد احچي اللي بي داخلي. اني اعرف انو هذا الكلام رح يزعجچ بس اسف. من تركنا العلاقه حسيت انو بعد أسبوع او شهر رح انسى، بس لا. لانو أنتي كنتي مثل كل شي حلو بنسبه الي، واني ارى أثق بيچ. فا من اروح البيت بيبي و نگعد نسولف صح، احنا چنه انو نسولف سوا، بس هسه لانو تعرفين العائله نظارتهم. فا يعني افتقدتچ، من اشوفچ اذكر الذكريات، و من اروح للحديقه هم اذكر. بس اللي اريد منچ لا تتفهمين غلط اللي اقصد، بس الذكريات اوكي. يعني اني ما اقصد ما اريد بعد أشوفچ اوكي.
+
+واللوم مال اهلي بدأ من امتحانات الثاني مال نهايه السنه و مستمر إلى الآن، يتهموني بي شغلات اني ما سويته، وعلى ابسط الشغلات يعصبون. صح انو بابا و ماما خالتهم النفسيه تعبانه اوكي تمام، يعني حتى حسوني و علاوي، بس اكثر شي حتى من ماما. العمليه مالتچ انقهرت كلش اوكي، بس هسه رح أكون كرنج سامحني، لدرجه يعني اني بكيت للصراحه. وسميتچ ليلى لانو چانت اكو أغاني بس اسم ليلى للصراحه، والشخصيه مالتي هي هاي، وترى أنتي هم الشخصيه مالتچ الثاني اني اعرفها من الحزن اوكي.
+
+ما اريد انو اذكرچ المهم واذكر الأحلام والمواقف سوا. وبالعرس يعرف شغله انو رهف معجبه بيه. شوف اني ما احبه واكرها وأنتي تعرفين. فا اني ما أريدها، اني اكرهم مو لانو بس فضولين هي واخوها، لانو اكو موقف صار بيه إلى انو حاقد عليهم.
+
+المهم اني ما سلمت اليچ بالعرس لانو خجلت بسبب انو اكو بنات. وهي رهف تگف گدامي بس كل مكان، يعني أشوف العرس الگاها بالشاشه الگالها، وحتى بالمستشفى، انو چنت كلش مقهور وضايج، وهاي كل شويه تروح تشوفني وتشاور أمها. وهذا الشي صار اكثر من مره بنفس الساعه، تخلي فا اني عرفت انو غليه بس سكت الها.
+
+وللصراحه أنتي حرفت بي إيدي حرفچ. صديقنا اني وكوكو، اسمه رويد، هذا الصديق من الثالث ابتدائي، لانو الآن صار لي فتره ما حاچي وياه اوكي. المهم اني لگيته گايل كل شي، من حسوني، انو هي من أبويه، ومن اللوم مال اهلي، ومن اني احبچ. فا بالمختصر گايل كل شي.
+
+وهذا الملف رح يسلم من تجين البيتنا، وإذا هسه أنتي ببيتنا اصعدي، يعني إذا تقبلين.`;
+
+const container = document.getElementById('letter');
+const paragraphs = text.split(/\n\n+/);
+paragraphs.forEach(p => {
+  const el = document.createElement('p');
+  el.textContent = p.trim();
+  container.appendChild(el);
+});
+</script>
+</body>
+</html>
